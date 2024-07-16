@@ -3,6 +3,8 @@
     padding:0px;
     width:130px;
     margin-top: 0px;
+    background-color: rgb(199, 29, 29);
+    cursor: pointer;
 }
 
 .Plusminus-button {

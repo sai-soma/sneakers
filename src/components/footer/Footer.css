@@ -1,15 +1,15 @@
 .Footer-container{
     display: flex;
-    background-color: #3b120f;
+    background-color:rgb(199, 29, 29);
     justify-content: space-around;;
     padding: 30px;
     text-align: left;
-    color:silver
+    color:white
     /* width: 200px; */
 }
 
 .Footer-bottom{
     padding: 30px;
-    background-color: #3b120f;
-    color:silver;
+    background-color:rgb(199, 29, 29);
+    color:white;
 }
