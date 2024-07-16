@@ -17,11 +17,11 @@ function App() {
         <Navbar />
         <hr />
         <Routes>
-          <Route path="/" element={<Products />} />
-          <Route path="/order" element={<Orders />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/sneakers" element={<Products />} />
+          <Route path="/sneakers/order" element={<Orders />} />
+          <Route path="/sneakers/cart" element={<Cart />} />
+          <Route path="/sneakers/login" element={<Login />} />
+          <Route path="/sneakers/register" element={<Register />} />
         </Routes>
         <Footer />
       </Router>
