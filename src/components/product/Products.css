@@ -1,7 +1,7 @@
 .Product-container{
     display: flex;
-    column-gap: 20px;
-    row-gap: 30px;
+    column-gap: 40px;
+    row-gap: 40px;
     margin:auto;
     width:90%;
     /* align-items: left;
@@ -16,7 +16,15 @@
     /* padding:10px; */
     border:1px silver solid;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+    color: #324d67;
+
 }
+.Product-items:hover{
+    transform: scale(1.1,1.1)
+  }
 .Product-button{
     /* background-color: #3b120f; */
     width: 200px;

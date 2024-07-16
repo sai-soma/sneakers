@@ -9,7 +9,7 @@ import Orders from "./components/order/Orders.js";
 import Register from "./components/user/Register.js";
 
 function App() {
-  const PATH = process.env.REACT_APP_PATH || "/sneakers";
+  const PATH = process.env.REACT_APP_PATH || " ";
 
   return (
     <div className="App">
