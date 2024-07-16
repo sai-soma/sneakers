@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "name": "Vans Sneakers",
+        "desc":"Vans Unisex Casual Sneakers Red",
+        "price": "2999",
+        "image": "/images/1.png"
+    },
+    {
+        "id": "2",
+        "name": "ORIGINALS MID X MAITÉ SHOES",
+        "desc":"ADIDAS ORIGINALS ADIMATIC MID X MAITÉ SHOES UNISEX",
+        "price": "11999",
+        "image": "/images/2.png"
+    },
+    {
+        "id": "3",
+        "name": "Converse High-Top Lace-Up Sneakers",
+        "desc":"Good Quality high-top sneakers from Converse. Chuck 90's ",
+        "price": "4299",
+        "image": "/images/3.png"
+    },
+    {
+        "id": "4",
+        "name": "New Balance Unisex Sneakers",
+        "desc":"New Balance Unisex 9060 Boston College",
+        "price": "11999",
+        "image": "/images/4.png"
+    },
+    {
+        "id": "5",
+        "name": "Diesel Original Men's Sneakers",
+        "desc":"Diesel's S-RACER LC Original Men's Sneakers ",
+        "price": "13497",
+        "image": "/images/5.png"
+    },
+    {
+        "id": "6",
+        "name": "Puma Unisex Sneakers",
+        "desc": "New Puma RS-X Forward History Unisex Sneakers",
+        "price": "7199",
+        "image": "/images/6.png"
+    },
+    {
+        "id": "7",
+        "name": "Reebok Men's Shoe",
+        "desc":"REEBOK Nanoflex Adventure TR 2 Lace-Up Training Shoes",
+        "price": "5999",
+        "image": "/images/7.png"
+    },
+    {
+        "id": "8",
+        "name": "Nike Dunk Low Retro Men's Shoe",
+        "desc":"This basketball icon channels '80s vibes with premium leather in the upper that looks good and breaks in even better.",
+        "price": "8295",
+        "image": "/images/8.png"
+    }
+]
