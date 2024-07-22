@@ -25,7 +25,7 @@ export default function Products() {
                 className="Product-img"
                 src={`${PATH}${value.image}`}
                 alt={value.name}
-                onClick={() => handleClick(value)} // Pass a function reference
+                onClick={() => handleClick(value)} 
               />
             </div>
             <h3>{value.name}</h3>

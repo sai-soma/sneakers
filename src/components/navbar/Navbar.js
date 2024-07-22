@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { AppContext } from "../../context/appContext";
+import logo from './logo.png'
 export default function Navbar() {
   const { cartItems, orders, user, setUser, flag, setFlag } =
     useContext(AppContext);
@@ -17,20 +18,20 @@ export default function Navbar() {
   };
   return (
     <div className="navbar">
-      <div className="title">SneakerHood</div>
+      <Link to={`/`} className="title">SneakerHood</Link>
       <div>
         <h3>{flag > 1 && user.name}</h3>
       </div>
       <div className="links">
-        <Link to={`${PATH}/`}> Products </Link>
+        <Link to={`/`}> Products </Link>
         {(myOrders.length > 0 && flag > 1) && (
-          <Link to={`${PATH}/order`}> Orders({myOrders.length}) </Link>
+          <Link to={`/order`}> Orders({myOrders.length}) </Link>
         )}
-        <Link to={`${PATH}/cart`}> Cart({total}) </Link>
+        <Link to={`/cart`}> Cart({total}) </Link>
         {flag < 2 ? (
-          <Link to={`${PATH}/login`}>Login</Link>
+          <Link to={`/login`}>Login</Link>
         ) : (
-          <Link to={`${PATH}/login`} onClick={handleLogout}>
+          <Link to={`/login`} onClick={handleLogout}>
             Logout
           </Link>
         )}

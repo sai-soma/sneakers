@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import AddButton from "./AddButton.js";
-import "./ProductDetails.css"; // Import your modal CSS if you have specific styling
-import PropTypes from 'prop-types';
+import "./ProductDetails.css";
 
 export default function ProductDetails(props) {
-  const [isOpen, setIsOpen] = useState(true); // State to manage modal open/close
+  const [isOpen, setIsOpen] = useState(true); 
     const {onClick}= props;
     const {product}=props;
 
-  if (!product) return null; // If product is not provided, don't render anything
-
+  if (!product) return null; 
   return (
     <div className={`Product-details ${isOpen ? "open" : "closed"}`}>
       <div className="Product-details-content">
@@ -29,6 +27,3 @@ export default function ProductDetails(props) {
     </div>
   );
 }
-ProductDetails.propTypes = {
-    onClick: PropTypes.func.isRequired,
-};

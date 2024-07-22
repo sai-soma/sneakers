@@ -21,7 +21,7 @@ export default function Login() {
     if (found) {
       setUser((prev) => ({ ...prev, name: found.name }));
       setFlag(() => 2);
-      Navigate(`${PATH}/cart`)
+      Navigate(`/cart`)
 
     } else setMsg(() => "Invalid email or password");
   };
@@ -59,7 +59,7 @@ export default function Login() {
         <br></br>
   
         <div className="Register-login">
-          <Link to={`${PATH}/register`}>
+          <Link to={`/register`}>
           
             <button className="newAccBtn">Create new account</button>
           </Link>

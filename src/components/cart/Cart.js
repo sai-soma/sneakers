@@ -11,7 +11,7 @@ export default function Cart() {
   const [order, setOrder] = useState({});
   const [orderValue, setOrderValue] = useState(0);
   const [items, setItems] = useState(0);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
     setOrderValue((prev) =>
       products.reduce((total, value) => {
@@ -30,7 +30,7 @@ export default function Cart() {
 
   const submitOrder = () => {
     if (flag < 2) {
-      navigate(`${PATH}/login`);
+      navigate(`/login`);
     } else {
       order.date = Date().slice(0, 15);
       order.email = user.email;
@@ -40,7 +40,7 @@ export default function Cart() {
       setOrder((prev) => ({ ...prev, order }));
       setOrders((prev) => [...prev, order]);
       setCartItems(() => []);
-      navigate(`${PATH}/order`);
+      navigate(`/order`);
     }
   };
 

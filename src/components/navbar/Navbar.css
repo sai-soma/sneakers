@@ -9,12 +9,14 @@
   background-color: #dcdcdc;
   font-family: 'Poppins', sans-serif;
 }
-
+.navbar img{ display:grid;}
 .title {
   margin-left: 20px;
   background-color:  rgb(219, 102, 102);
   border-radius: 50% 50% 0 0 / 60% 60% 0 0;
-  font-size: small;
+  font-size: 50px;
+  text-decoration: none;
+  color: black;
 }
 
 .links {
@@ -34,4 +36,5 @@
 
 .links a:hover {
   transform: scale(1.1, 1.1);
+  color: red;
 }

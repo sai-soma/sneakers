@@ -18,7 +18,7 @@ const PATH = process.env.REACT_APP_PATH
     } else {
       setUsers((prev) => [...prev, user]);
       setFlag(()=>2)
-      Navigate(`${PATH}/`)
+      Navigate(`/`)
     }
   };
 
@@ -61,7 +61,7 @@ const PATH = process.env.REACT_APP_PATH
         <button onClick={newUser}> Sign Up</button>
       </div>
       <br></br>
-      <div className="Register-login">Already have an account? <Link to={`${PATH}/login`}>Sign in</Link></div>
+      <div className="Register-login">Already have an account? <Link to={`/login`}>Sign in</Link></div>
     </div>
   );
 }

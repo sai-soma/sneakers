@@ -10,7 +10,7 @@ import Register from "./components/user/Register.js";
 import ProductDetails from "./components/product/ProductDetails.js";
 
 function App() {
-  const PATH = process.env.REACT_APP_PATH || "/sneakers/sneakers";
+  const PATH = process.env.REACT_APP_PATH;
 
   return (
     <div className="App">
@@ -18,12 +18,12 @@ function App() {
         <Navbar />
         <hr />
         <Routes>
-          <Route path="/sneakers" index element={<Products/>} />
-          <Route path="/sneakers/:productId" element={<ProductDetails/>} />
-          <Route path="/sneakers/order" element={<Orders />} />
-          <Route path="/sneakers/cart" element={<Cart />} />
-          <Route path="/sneakers/login" element={<Login />} />
-          <Route path="/sneakers/register" element={<Register />} />
+          <Route path="/" index element={<Products/>} />
+          <Route path="/:productId" element={<ProductDetails/>} />
+          <Route path="/order" element={<Orders />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" index element={<Register />} />
         </Routes>
         <Footer />
       </Router>

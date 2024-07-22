@@ -21,7 +21,7 @@ export const AppContextProvider = (props) => {
     setUsers,
     flag,setFlag,
 
-  };
+  }; 
   return (
     <AppContext.Provider value={val}>{props.children}</AppContext.Provider>
   );
