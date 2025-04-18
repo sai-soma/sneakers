@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 export default function Cart() {
   const PATH = process.env.REACT_APP_PATH;
-  const { flag, cartItems, setCartItems, products, setOrders, user } =
-    useContext(AppContext);
+  const { flag, cartItems, setCartItems, products, setOrders, user } = useContext(AppContext);
   const [order, setOrder] = useState({});
   const [orderValue, setOrderValue] = useState(0);
   const [items, setItems] = useState(0);
@@ -19,13 +18,14 @@ export default function Cart() {
       }, 0)
     );
     const values = Object.values(cartItems);
-    let total = values.filter(((elem)=>elem>0))
+    let total = values.filter((elem) => elem > 0);
     total = total.length;
     setItems(() => total);
-  }, [cartItems]);
+  }, [cartItems, products]);
+  
 
   const updateCart = (id, qty) => {
-      setCartItems((prev) => ({ ...prev, [id]: qty }));
+    setCartItems((prev) => ({ ...prev, [id]: qty }));
   };
 
   const submitOrder = () => {
@@ -60,32 +60,21 @@ export default function Cart() {
                 if (cartItems[elem.id]) {
                   return (
                     <tr key={elem.id} ClassName="Cart-items">
+                      <td>
+                        <img src={elem.image} />
+                      </td>
                       <td className="Cart-item-name">{elem.name}</td>
                       <td className="Cart-item-cells">₹{elem.price}</td>
                       <td className="Cart-item-buttons">
-                        <button
-                          className="Cart-button"
-                          onClick={() =>
-                            updateCart(elem.id, cartItems[elem.id] - 1)
-                          }
-                        >
+                        <button className="Cart-button" onClick={() => updateCart(elem.id, cartItems[elem.id] - 1)}>
                           -
                         </button>
-                        <span style={{ padding: "5px" }}>
-                          {cartItems[elem.id]}
-                        </span>
-                        <button
-                          className="Cart-button"
-                          onClick={() =>
-                            updateCart(elem.id, cartItems[elem.id] + 1)
-                          }
-                        >
+                        <span style={{ padding: "5px" }}>{cartItems[elem.id]}</span>
+                        <button className="Cart-button" onClick={() => updateCart(elem.id, cartItems[elem.id] + 1)}>
                           +
                         </button>
                       </td>
-                      <td className="Cart-item-cells">
-                        ₹{elem.price * cartItems[elem.id]}
-                      </td>
+                      <td className="Cart-item-cells">₹{elem.price * cartItems[elem.id]}</td>
                     </tr>
                   );
                 }
@@ -103,7 +92,6 @@ export default function Cart() {
               </button>
             </div>
           </div>
-      
         </>
       ) : (
         <div>
