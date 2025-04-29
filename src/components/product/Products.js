@@ -23,7 +23,7 @@ export default function Products() {
             <div>
               <img
                 className="Product-img"
-                src={`${PATH}${value.image}`}
+                src={value.image}
                 alt={value.name}
                 onClick={() => handleClick(value)} 
               />
