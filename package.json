@@ -1,5 +1,4 @@
 {
-  "homepage": ".",
   "name": "sneakers",
   "version": "0.1.0",
   "private": true,
@@ -15,9 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "cross-env CI=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,7 +38,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "gh-pages": "^6.3.0",
     "react-router-dom": "^7.5.3"
   }
 }
