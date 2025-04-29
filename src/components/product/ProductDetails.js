@@ -14,7 +14,7 @@ export default function ProductDetails(props) {
         <span className="close-btn" onClick={onClick}>&times;</span>
         <h2>{product.name}</h2>
         <div>
-          <img src={`${process.env.REACT_APP_PATH}${product.image}`} alt={product.name} />
+          <img src={product.image} alt={product.name} />
         </div>
         <p style={{ textAlign: "justify", padding: "10px" }}>{product.desc}</p>
         <div className="priceBtn">
